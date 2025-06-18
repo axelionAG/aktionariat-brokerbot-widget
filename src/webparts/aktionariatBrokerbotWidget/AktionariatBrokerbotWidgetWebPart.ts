@@ -24,9 +24,7 @@ export default class AktionariatBrokerbotWidgetWebPart extends BaseClientSideWeb
     );
 
     this.domElement.innerHTML = `
-    <section class="${styles.aktionariatBrokerbotWidget} ${
-      !!this.context.sdks.microsoftTeams ? styles.teams : ""
-    }">
+    <section class="${styles.aktionariatBrokerbotWidget}">
       <div>
         <akt-brokerbot ticker="${escape(
           this.properties.ticker
