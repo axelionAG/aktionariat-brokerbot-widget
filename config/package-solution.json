@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "aktionariat-brokerbot-widget-client-side-solution",
+    "id": "31910714-0cf8-4019-bcb6-6d09c8c2d4a2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "axelion AG",
+      "websiteUrl": "https://axelion.ch",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Widget for the Aktionariat AG Brokerbot"
+      },
+      "longDescription": {
+        "default": "This is a widget for the Aktionariat AG Brokerbot that can be used in SharePoint."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Display the Aktionariat AG Brokerbot",
+        "description": "The feature that activates the Aktionariat AG Brokerbot widget.",
+        "id": "e3d50e0f-8212-4dc3-94a8-b88fc6ff8a38",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/aktionariat-brokerbot-widget.sppkg"
+  }
+}

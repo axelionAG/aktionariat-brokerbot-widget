@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "aktionariat-brokerbot-widget-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/aktionariatBrokerbotWidget/AktionariatBrokerbotWidgetWebPart.js",
+          "manifest": "./src/webparts/aktionariatBrokerbotWidget/AktionariatBrokerbotWidgetWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AktionariatBrokerbotWidgetWebPartStrings": "lib/webparts/aktionariatBrokerbotWidget/loc/{locale}.js"
+  }
+}
