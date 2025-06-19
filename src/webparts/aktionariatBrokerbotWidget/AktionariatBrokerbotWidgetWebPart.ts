@@ -27,8 +27,8 @@ export default class AktionariatBrokerbotWidgetWebPart extends BaseClientSideWeb
     <section class="${styles.aktionariatBrokerbotWidget}">
       <div>
         <akt-brokerbot ticker="${escape(
-          this.properties.ticker
-        )}" id="brokerbot"></akt-brokerbot>
+      this.properties.ticker
+    )}" id="brokerbot"></akt-brokerbot>
       </div>
     </section>`;
   }

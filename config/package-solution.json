@@ -3,7 +3,7 @@
   "solution": {
     "name": "aktionariat-brokerbot-widget-client-side-solution",
     "id": "31910714-0cf8-4019-bcb6-6d09c8c2d4a2",
-    "version": "1.1.0.0",
+    "version": "1.1.1.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,7 +30,7 @@
         "title": "Display the Aktionariat AG Brokerbot",
         "description": "The feature that activates the Aktionariat AG Brokerbot widget.",
         "id": "e3d50e0f-8212-4dc3-94a8-b88fc6ff8a38",
-        "version": "1.1.0.0"
+        "version": "1.0.0.0"
       }
     ]
   },

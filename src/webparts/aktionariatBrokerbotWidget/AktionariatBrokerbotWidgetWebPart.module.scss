@@ -1,12 +1,11 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
+html,
+body {
+  --wcm-accent-color:  "[theme:themePrimary]";
+  --wcm-background-color:  "[theme:themePrimary]";
+}
+
 .aktionariatBrokerbotWidget {
     --brokerbot-color-primary: "[theme:themePrimary]";
-  // overflow: hidden;
-  // padding: 1em;
-  // color: "[theme:bodyText, default: #323130]";
-  // color: var(--bodyText);
-  // &.teams {
-    // font-family: $ms-font-family-fallbacks;
-  // }
 }
