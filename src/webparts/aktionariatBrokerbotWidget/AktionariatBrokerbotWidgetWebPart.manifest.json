@@ -31,7 +31,10 @@
         "showBrokerbot": true,
         "showChart": false,
         "showProgress": false,
-        "showInvestorGroupsChart": false
+        "showInvestorGroupsChart": false,
+        "showTrades": false,
+        "showTradingVolume": false,
+        "showMetric": false
       }
     }
   ]

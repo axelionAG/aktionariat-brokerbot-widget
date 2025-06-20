@@ -3,7 +3,7 @@
   "solution": {
     "name": "aktionariat-brokerbot-widget-client-side-solution",
     "id": "31910714-0cf8-4019-bcb6-6d09c8c2d4a2",
-    "version": "1.2.0.0",
+    "version": "1.2.1.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

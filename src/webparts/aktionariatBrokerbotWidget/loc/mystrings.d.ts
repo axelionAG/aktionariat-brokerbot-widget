@@ -6,6 +6,9 @@ declare interface IAktionariatBrokerbotWidgetWebPartStrings {
   ShowChartFieldLabel: string;
   ShowProgressFieldLabel: string;
   ShowInvestorGroupsChartFieldLabel: string;
+  ShowTradesFieldLabel: string;
+  ShowTradingVolumeFieldLabel: string;
+  ShowMetricFieldLabel: string;
 }
 
 declare module 'AktionariatBrokerbotWidgetWebPartStrings' {

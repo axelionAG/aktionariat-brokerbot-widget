@@ -7,5 +7,8 @@ define([], function () {
     "ShowChartFieldLabel": "Show Chart",
     "ShowProgressFieldLabel": "Show Progress",
     "ShowInvestorGroupsChartFieldLabel": "Show Investment Groups Chart",
+    "ShowTradesFieldLabel": "Show Trades",
+    "ShowTradingVolumesFieldLabel": "Show Trading Volumes",
+    "ShowMetricFieldLabel": "Show Metric (KPI)",
   }
 });

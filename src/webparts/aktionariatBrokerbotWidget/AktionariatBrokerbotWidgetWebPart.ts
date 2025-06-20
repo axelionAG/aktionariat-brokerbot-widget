@@ -16,6 +16,9 @@ export interface IAktionariatBrokerbotWidgetWebPartProps {
   showChart: boolean;
   showProgress: boolean;
   showInvestorGroupsChart: boolean;
+  showTrades: boolean;
+  showTradingVolume: boolean;
+  showMetric: boolean;
 }
 
 export default class AktionariatBrokerbotWidgetWebPart extends BaseClientSideWebPart<IAktionariatBrokerbotWidgetWebPartProps> {
@@ -34,45 +37,29 @@ export default class AktionariatBrokerbotWidgetWebPart extends BaseClientSideWeb
 
     const ticker = escape(this.properties.ticker);
 
-    let brokerbotHtml = `
-        <div style="margin-top: 24px;">
-          <akt-brokerbot ticker="${ticker}" lang="en" id="brokerbot"></akt-brokerbot>
-        </div>`
-
-    let chartHtml = `
-        <div style="margin-top: 128px;">
-          <akt-chart ticker="${ticker}"></akt-chart>
-        </div> `;
-
-    let progressHtml = `
-        <div style="margin-top: 128px;">
-          <akt-progress ticker="${ticker}" showLiquidityPool></akt-progress>
-        </div>`;
-
-    let investorGroupsChartHtml = `
-        <div style="margin-top: 128px;">
-          <akt-investor-groups-chart 
-            ticker="${ticker}" 
-            colors='["#a8b4bb","#dfe6ec","#9051e4","#4ccd4f"]'
-            showTitle 
-            showDataLabels>
-          </akt-investor-groups-chart>
-        </div>`;
-
     let html = `
       <section class="${styles.aktionariatBrokerbotWidget}">`;
 
     if (this.properties.showBrokerbot) {
-      html += brokerbotHtml;
+      html += `<akt-brokerbot ticker="${ticker}" lang="en" id="brokerbot"></akt-brokerbot>`
     }
     if (this.properties.showChart) {
-      html += chartHtml;
+      html += `<akt-chart ticker="${ticker}"></akt-chart>`;
     }
     if (this.properties.showProgress) {
-      html += progressHtml;
+      html += `<akt-progress ticker="${ticker}" showLiquidityPool></akt-progress>`
     }
     if (this.properties.showInvestorGroupsChart) {
-      html += investorGroupsChartHtml;
+      html += `<akt-investor-groups-chart ticker="${ticker}" colors='["#a8b4bb","#dfe6ec","#9051e4","#4ccd4f"]' showTitle showDataLabels> </akt-investor-groups-chart>`;
+    }
+    if (this.properties.showTrades) {
+      html += `<akt-trades ticker="${ticker}"></akt-trades>`;
+    }
+    if (this.properties.showTradingVolume) {
+      html += `<akt-trading-volume-chart ticker="${ticker}"></akt-trading-volume-chart>`;
+    }
+    if (this.properties.showMetric) {
+      html += `<akt-metric ticker="${ticker}"></akt-metric>`;
     }
     html += `
       </section>`;
@@ -110,6 +97,15 @@ export default class AktionariatBrokerbotWidgetWebPart extends BaseClientSideWeb
                 }),
                 PropertyPaneCheckbox("showInvestorGroupsChart", {
                   text: strings.ShowInvestorGroupsChartFieldLabel
+                }),
+                PropertyPaneCheckbox("showTrades", {
+                  text: strings.ShowTradesFieldLabel
+                }),
+                PropertyPaneCheckbox("showTradingVolume", {
+                  text: "Show Trading Volume"
+                }),
+                PropertyPaneCheckbox("showMetric", {
+                  text: "Show Metric"
                 }),
               ],
             },
