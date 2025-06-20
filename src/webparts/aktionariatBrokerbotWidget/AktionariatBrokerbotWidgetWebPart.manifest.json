@@ -27,7 +27,11 @@
       },
       "officeFabricIconFontName": "Page",
       "properties": {
-        "ticker": "DAKS"
+        "ticker": "DEXA",
+        "showBrokerbot": true,
+        "showChart": false,
+        "showProgress": false,
+        "showInvestorGroupsChart": false
       }
     }
   ]
